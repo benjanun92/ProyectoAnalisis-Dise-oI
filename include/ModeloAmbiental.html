@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTEMA DE INVENTARIO</title>
+    <link rel="stylesheet" type="text/css" href="../resource/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../resource/css/styleIndex.css" />
+    <!-- ICONOS -->
+    <link rel="icon" type="jpeg" href="../resource/imagenes/icono.jpeg">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            padding: 20px;
+        }
+        .contenido {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            scroll-margin-top: 80px;
+        }
+        .contenido h2 {
+            color: #e74c3c;
+            font-size: 28px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 10px;
+        }
+        .contenido p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+        .cita {
+            font-style: italic;
+            color: #e67e22;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            background: #fff9f0;
+            border-radius: 10px;
+        }
+        .btn-volver {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background: #e74c3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        .btn-volver:hover {
+            background: #c0392b;
+        }
+        .header-interno {
+            background: white;
+            padding: 15px 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="../resource/imagenes/icono.jpeg" height="100">
+        <div class="logo"> Centro de comida rapida "PAPAYA"</div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Marco Teorico ▼</a>
+                <ul class="submenu">
+                    <li><a href="MarcoTeorico.html#Introduccion">Introducción</a></li>
+                    <li><a href="MarcoTeorico.html#Antecedentes">Antecedentes</a></li>
+                    <li><a href="MarcoTeorico.html#Planteamiento">Planteamiento Del Problema</a></li>
+                    <li><a href="MarcoTeorico.html#Arbol">Árbol De Problema</a></li>
+                    <li><a href="MarcoTeorico.html#Formulacion">Formulación Del Problema</a></li>
+                    <li><a href="MarcoTeorico.html#Proposito">Propósito Del Estudio</a></li>
+                    <li><a href="MarcoTeorico.html#Metodologia">Metodología</a></li>
+                    <li><a href="MarcoTeorico.html#Planificacion">Planificación De Actividades</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Analisis Estructurado ▼</a>
+                <ul class="submenu">
+                    <li><a href="#", class="nav-link">Modelo Ambiental ►</a>
+                        <ul class="submenu-right">
+                            <li><a href="ModeloAmbiental.html#Declaracion">Declaracion de propositos</a></li>
+                            <li><a href="ModeloAmbiental.html#Diagrama">Diagrama de Contexto</a></li>
+                            <li><a href="ModeloAmbiental.html#Lista">Lista de acontecimientos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="nav-link">Modelo de comportamiento ►</a>
+                        <ul class="submenu-right">
+                            <li><a href="ModeloComportamiento.html#DFD">DFD por Niveles</a></li>
+                            <li><a href="ModeloComportamiento.html#ER">Diagrama Entidad-Relacion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="OrientadoObjetos.html" class="nav-link">Orientado a Objetos</a>
+            </li>
+            <li class="nav-item"><a href="videos.html" class="nav-link">Videos</a></li>
+            <li class="nav-item"><a href="Contactos.html" class="nav-link">Contactos</a></li>
+        </ul>
+    </div>
+    <div id="Declaracion" class="contenido">
+        <h2>1. Declaracion de Propositos</h2>
+        <p>
+            Se pide realizar un sistema que maneje el inventario del puesto de comida rápida “PAPAYA” bajo el paradigma del análisis estructurado.
+        </p>
+    </div>
+
+    <div id="Diagrama" class="contenido">
+        <h2>2. Diagrama de Contexto</h2>
+        <img src="../resource/imagenes/diagramaContexto.png" width="850" height="650">
+    </div>
+
+    <div id="Lista" class="contenido">
+        <h2>3. Lista de Acontecimientos</h2>
+        <p>El encargado de sucursal registra el ingreso de insumos recibidos del proveedor.</p>
+        <p>El encargado registra el consumo/venta de productos.</p>
+        <p>La sucursal solicita stock adicional al sistema.</p>
+        <p>El sistema detecta stock por debajo del mínimo y genera una alerta automática.</p>
+        <p>La sucursal solicita una transferencia de insumos desde otra sucursal.</p>
+        <p>El gerente solicita reporte de inventario general o por sucursal.</p>
+        <p>El gerente solicita reporte de consumo diario o semanal.</p>
+        <p>El gerente emite una orden de compra a un proveedor.</p>
+        <p>El gerente autoriza una transferencia de insumos entre sucursales.</p>
+        <p>El gerente registra o modifica parámetros de stock mínimo por sucursal.</p>
+        <p>El sistema envía automáticamente una orden de reposición al proveedor ante stock crítico.</p>
+        <p>El proveedor entrega insumos y el sistema registra el ingreso en la sucursal.</p>
+        <p>El proveedor envía una factura al sistema.</p>
+        <p>El sistema registra los datos de pago al proveedor.</p>
+        <p>El encargado registra una baja o merma de insumos con justificación.</p>
+        <p>El sistema genera el cierre diario de inventario por sucursal.</p>
+        <p>El sistema consolida el inventario global de todas las sucursales.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTEMA DE INVENTARIO</title>
+    <link rel="stylesheet" type="text/css" href="../resource/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../resource/css/styleIndex.css" />
+    <!-- ICONOS -->
+    <link rel="icon" type="jpeg" href="../resource/imagenes/icono.jpeg">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            padding: 20px;
+        }
+        .contenido {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            scroll-margin-top: 80px;
+        }
+        .contenido h2 {
+            color: #e74c3c;
+            font-size: 28px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 10px;
+        }
+        .contenido p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+        .cita {
+            font-style: italic;
+            color: #e67e22;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            background: #fff9f0;
+            border-radius: 10px;
+        }
+        .btn-volver {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background: #e74c3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        .btn-volver:hover {
+            background: #c0392b;
+        }
+        .header-interno {
+            background: white;
+            padding: 15px 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="../resource/imagenes/icono.jpeg" height="100">
+        <div class="logo"> Centro de comida rapida "PAPAYA"</div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Marco Teorico ▼</a>
+                <ul class="submenu">
+                    <li><a href="MarcoTeorico.html#Introduccion">Introducción</a></li>
+                    <li><a href="MarcoTeorico.html#Antecedentes">Antecedentes</a></li>
+                    <li><a href="MarcoTeorico.html#Planteamiento">Planteamiento Del Problema</a></li>
+                    <li><a href="MarcoTeorico.html#Arbol">Árbol De Problema</a></li>
+                    <li><a href="MarcoTeorico.html#Formulacion">Formulación Del Problema</a></li>
+                    <li><a href="MarcoTeorico.html#Proposito">Propósito Del Estudio</a></li>
+                    <li><a href="MarcoTeorico.html#Metodologia">Metodología</a></li>
+                    <li><a href="MarcoTeorico.html#Planificacion">Planificación De Actividades</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Analisis Estructurado ▼</a>
+                <ul class="submenu">
+                    <li><a href="#", class="nav-link">Modelo Ambiental ►</a>
+                        <ul class="submenu-right">
+                            <li><a href="ModeloAmbiental.html#Declaracion">Declaracion de propositos</a></li>
+                            <li><a href="ModeloAmbiental.html#Diagrama">Diagrama de Contexto</a></li>
+                            <li><a href="ModeloAmbiental.html#Lista">Lista de acontecimientos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="nav-link">Modelo de comportamiento ►</a>
+                        <ul class="submenu-right">
+                            <li><a href="ModeloComportamiento.html#DFD">DFD por Niveles</a></li>
+                            <li><a href="ModeloComportamiento.html#ER">Diagrama Entidad-Relacion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="OrientadoObjetos.html" class="nav-link">Orientado a Objetos</a>
+            </li>
+            <li class="nav-item"><a href="videos.html" class="nav-link">Videos</a></li>
+            <li class="nav-item"><a href="Contactos.html" class="nav-link">Contactos</a></li>
+        </ul>
+    </div>
+    <div id="Introduccion" class="contenido">
+        <h2>1. Introducción</h2>
+        <p>
+            Desde la antigüedad, el control de inventarios ha sido una necesidad fundamental en las empresas, 
+            permitiendo llevar una relación detallada, ordenada y valorada de los elementos que componen el patrimonio 
+            de una organización o persona natural.
+        </p>
+        <p>
+            En la actualidad, gracias a la tecnología y las bases de datos sistematizadas, los inventarios son bienes 
+            físicos que tienen como objetivo ser distribuidos como objetos de negocio. Son uno de los recursos más 
+            importantes para una empresa, ya que aseguran un balance óptimo en los costos generados.
+        </p>
+        <p>
+            En el rubro de comida rápida, los inventarios solo consideran valores de compra y venta, ya que no es 
+            posible hacer devoluciones de los productos. La administración de inventarios es crucial para evitar 
+            excesos o faltantes.
+        </p>
+        <div class="cita">
+            💡 "Siempre tenemos demasiado de lo que no se vende o consume"
+        </div>
+    </div>
+
+    <div id="Antecedentes" class="contenido">
+        <h2>2. Antecedentes</h2>
+        <p>
+            El control de inventarios ha sido una necesidad fundamental desde las civilizaciones antiguas, donde ya se llevaban registros básicos de bienes almacenados. Con la Revolución Industrial, estos sistemas evolucionaron significativamente ante el crecimiento de la producción y la complejidad de las cadenas de suministro.
+        </p>
+        <p>
+            En la era digital actual, el uso de bases de datos, códigos de barras y software especializado permite un control preciso y en tiempo real de las existencias. En el sector de comida rápida, como el Centro "PAPAYA", la gestión de inventarios es particularmente crítica debido a la naturaleza perecedera de los insumos, que imposibilita devoluciones de productos no vendidos. 
+        </p>
+        <p>
+            Estudios indican que una mala administración en este rubro puede generar pérdidas del 20-30% de los ingresos, lo que hace indispensable implementar sistemas eficientes para garantizar la rentabilidad del negocio.
+        </p>
+    </div>
+
+    <div id="Planteamiento" class="contenido">
+        <h2>3. Planteamiento Del Problema</h2>
+        <p>
+            La empresa PAPAYA S.A., dedicada al rubro de comida rápida, enfrenta un desafío significativo en sus costos operacionales debido a la alta dependencia de insumos alimentarios para mantener la producción en funcionamiento, afectando principalmente al área de cocina y atención al cliente, donde el tiempo de preparación no puede ser prolongado.
+        </p>
+        <p>
+            El alto consumo de insumos representa un costo muy grande para la empresa y genera un impacto negativo en la clientela. Ante esta problemática y con la necesidad de reducir costos y mejorar la línea de producción, se plantea la siguiente pregunta: 
+        </p>
+    </div>
+
+    <div id="Arbol" class="contenido">
+        <h2>4. Árbol De Problema</h2>
+        <img src="../resource/imagenes/arbolProblemas.png" width="940" height="900">
+    </div>
+
+    <div id="Formulacion" class="contenido">
+        <h2>5. Formulación Del Problema</h2>
+        <p> <strong>
+            ¿De qué manera un sistema informático integral puede automatizar y optimizar la gestión del inventario de un puesto de comida rápida, facilitando el registro de insumos y productos, el control de stock, la administración de proveedores, el registro de ventas, así como la generación de reportes gerenciales que apoyen la toma de decisiones estratégicas del negocio, permitiendo mejorar la eficiencia operativa, garantizar información actualizada en tiempo real y respaldar la planificación y crecimiento sostenido del puesto? </strong>
+        </p>
+    </div>
+
+    <div id="Proposito" class="contenido">
+        <h2>6. Propósito Del Estudio</h2>
+         <p><strong>OBJETIVO GENERAL</strong></p>
+         <p>
+            Desarrollar, diseñar e implementar un sistema informático integral que permita automatizar y optimizar la gestión del inventario de un puesto de comida rápida, facilitando el registro de insumos y productos, el control de stock, la administración de proveedores, el registro de ventas, así como la generación de reportes gerenciales que apoyen la toma de decisiones estratégicas del negocio, con el fin de mejorar la eficiencia operativa, garantizar información actualizada en tiempo real y respaldar la planificación y el crecimiento sostenido del puesto.
+        </p>
+        <p><strong>OBJETIVOS ESPECÍFICOS</strong></p>
+        <p>Implementar un sistema digital integral para la gestión automatizada de insumos y productos del puesto de comida rápida.</p>
+        <p>Digitalizar el control de inventario eliminando los registros manuales en papel o planillas físicas.</p>
+        <p>Establecer un registro preciso y automatizado de todas las entradas y salidas de mercadería en tiempo real.</p>
+        <p>Implementar un sistema de control de fechas de vencimiento que alerte sobre productos próximos a caducar y evite el desperdicio.</p>
+        <p>Garantizar el abastecimiento continuo de ingredientes clave mediante alertas automáticas de stock mínimo.</p>
+        <p>Optimizar los niveles de inventario para evitar el sobre stock en insumos de baja rotación.</p>
+        <p>Reducir las pérdidas económicas ocasionadas por productos caducados mediante un control eficiente de fechas de vencimiento.</p>
+        <p>Evitar la pérdida de ventas asegurando la disponibilidad oportuna de todos los ingredientes necesarios para la preparación del menú.</p>
+        <p>Automatizar la planificación de pedidos a proveedores basados en datos reales de consumo y rotación de inventario.</p>
+        <p>Automatizar la planificación de pedidos a proveedores basados en datos reales de consumo y rotación de inventario.</p>
+        <p>Minimizar el desperdicio de alimentos mediante un sistema que optimice el uso de insumos.</p>
+        <p>Incrementar la confianza y satisfacción del cliente garantizando la disponibilidad permanente de los productos ofertados.</p>
+        <p>Aumentar los ingresos y la rentabilidad del negocio mediante una gestión eficiente del inventario que reduzca pérdidas y maximice las ventas.</p>
+        <p>Proveer una herramienta informática de seguimiento que se adapte al ritmo de crecimiento acelerado del negocio. </p>
+    </div>
+
+    <div id="Metodologia" class="contenido">
+        <h2>7. Metodología</h2>
+        <p><strong>METODOLOGÍA SCRUM</strong></p>
+        <p>
+        Scrum es un marco de trabajo ágil, iterativo e incremental basado en tres pilares: transparencia, inspección y adaptación. Divide el proyecto en ciclos cortos llamados Sprints, obteniendo resultados funcionales de forma continua. Para PAPAYA S.A., resulta la metodología más adecuada por su entorno dinámico, permitiendo construir el sistema de manera progresiva y responder con agilidad a los cambios.</p>
+        <p><strong>ROLES DE SCRUM</strong></p>
+        <p>
+        Product Owner: Maximiza el valor del software, gestiona y prioriza el Product Backlog. Asumido por la Gerencia de PAPAYA S.A.</p>
+        <p>
+        Scrum Master: Facilitador y líder al servicio del equipo, elimina obstáculos y asegura la correcta aplicación de Scrum.
+        </p>
+        <p>
+        Equipo de Desarrollo: Grupo autoorganizado de profesionales que convierten los requerimientos en incrementos de producto entregables.</p>
+
+        <p><strong>ARTEFACTOS DE SCRUM</strong></p>
+        <p><strong>Product Backlog:</strong> Lista ordenada y dinámica de todo lo que necesita el sistema (ej: "Módulo de proveedores", "Alertas de stock mínimo", "Reportes de ventas"). Es la única fuente de trabajo y la gestiona el Product Owner.</p>
+
+        <p><strong>Sprint Backlog:</strong> Subconjunto de tareas seleccionadas del Product Backlog para un Sprint específico (ej: "Diseñar interfaz HTML", "Programar algoritmo de vencimiento"). Es el plan técnico del equipo.</p>
+
+        <p><strong>Incremento:</strong> Resultado funcional y probado de cada Sprint, que se suma acumulativamente a entregas anteriores (ej: prototipo web que registra ventas y consulta stock en tiempo real).</p>
+
+        <p><strong>EVENTOS DE SCRUM</strong></p>
+        <p><strong>Sprint:</strong> Ciclo de trabajo de duración fija (2 semanas para PAPAYA S.A.). Es el contenedor de todos los eventos y produce un incremento utilizable del producto.</p>
+
+        <p><strong>Planificación del Sprint:</strong> Reunión al inicio del ciclo donde el equipo define qué construir y cómo lograrlo técnicamente.</p>
+
+        <p><strong>Daily Scrum:</strong> Reunión diaria de 15 minutos donde los desarrolladores responden: ¿Qué hice ayer?, ¿Qué haré hoy? y ¿Tengo algún impedimento?</p>
+
+        <p><strong>Sprint Review:</strong> Reunión al final del Sprint donde se presenta el incremento funcional a los interesados (Gerencia de PAPAYA S.A.) para recibir retroalimentación.</p>
+
+        <p><strong>Sprint Retrospective:</strong>Reunión de cierre donde el equipo reflexiona sobre su desempeño y planifica mejoras para el siguiente Sprint.</p>
+    </div>
+
+    <div id="Planificacion" class="contenido">
+        <h2>8. Planificación De Actividades</h2>
+        <p><strong>Diagrama de Gantt</strong></p>
+        <img src="../resource/imagenes/diagramaGantt.png" width="940" height="500">
+        <p><strong>Diagrama de Pert</strong></p>
+        <img src="../resource/imagenes/diagramaPert.png" width="940" height="500">
+        <p><img src="../resource/imagenes/diagramaPert2.png" width="940" height="500"></p>
+    </div>
+</body>
+</html>
